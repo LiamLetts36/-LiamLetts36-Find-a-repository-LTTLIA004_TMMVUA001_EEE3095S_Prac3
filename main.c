@@ -354,7 +354,7 @@ void EXTI0_1_IRQHandler(void)
 	
 	curr_millis = HAL_GetTick();
 
-	if(curr_millis - prev_millis < 500)
+	if(curr_millis - prev_millis > 500)
 	{
 		if(delay_t == 1000)
 		{
